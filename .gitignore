@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+venv/
+.venv/
+.venv
+backend/.venv
+
+# Node
+node_modules/
+.svelte-kit/
+build/
+
+# Environment
+.env
+.env.production
+.env.local
+.env*.local
+*.session
+backend/evals/.sender-session
+
+# Deployment secrets
+deploy/.vm-info
+deploy/gcp-credentials.json
+
+# IDE
+.vscode/
+.idea/
+
+# Telegram Web Z (self-hosted, not tracked)
+telegram-web-z/
+
+# OS
+.DS_Store
+
+# Superpowers brainstorm sessions
+.superpowers/brainstorm/
+
+# Tools & scratch
+.playwright-mcp/
+.serena/
+sessions/
+/media/
+/media_cache/
+/tasks/
+frontend-v2/
+
+# Scratch files
+*.png
+!docs/frontend/concepts/**/*.png
+*.txt
+.dev-logs/
+.dev-pids/
+.local/
+.snapshots/
+.superpowers/
+.claude/
+deploy/gcp-service-account.json
+
+# Local scratch / sample inputs (not part of the codebase)
+convo.md
+folder/
+
+# Test artifacts
+test-results/
+frontend/test-results/
+frontend/playwright-report/
+backend/openapi.json
+
+# Media cache (user data)
+backend/media_cache/
+
+# Coverage
+.coverage
+backend/.coverage

@@ -1,0 +1,222 @@
+[
+  {
+    "telegram_message_id": 1001001,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "Assalomu alaykum! iPhone 15 Pro bormi sizda?",
+    "timestamp": "2026-03-25T09:12:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001002,
+    "telegram_chat_id": 1001,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Vaalaykum assalom! Ha, bor. Qaysi rang kerak?",
+    "timestamp": "2026-03-25T09:13:22",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001003,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "Qora rang. Narxi qancha?",
+    "timestamp": "2026-03-25T09:14:05",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001004,
+    "telegram_chat_id": 1001,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "iPhone 15 Pro 256GB qora — 18,500,000 so'm. 512GB bo'lsa 21,000,000 so'm.",
+    "timestamp": "2026-03-25T09:15:10",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001005,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "256GB kerak. Yetkazib berasizmi? Yunusobod 3-kvartaldaman.",
+    "timestamp": "2026-03-25T09:16:44",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001006,
+    "telegram_chat_id": 1001,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Ha, yetkazamiz. Toshkent bo'ylab 30,000 so'm yetkazib berish. Bugun buyurtma bersangiz, ertaga ertalab borib qoladi.",
+    "timestamp": "2026-03-25T09:17:30",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001007,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "Kafolat bormidi? Necha oylik?",
+    "timestamp": "2026-03-25T09:18:55",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001008,
+    "telegram_chat_id": 1001,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "12 oylik rasmiy kafolat. Apple-ning o'zi beradi. Agar biror muammo chiqsa, biz ham yordam beramiz.",
+    "timestamp": "2026-03-25T09:19:40",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001009,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "Xo'p, olaman. To'lov qanday? Naqd yoki karta?",
+    "timestamp": "2026-03-25T09:21:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001010,
+    "telegram_chat_id": 1001,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Ikkalasi ham bo'ladi. Karta bo'lsa Payme yoki Click orqali. Naqd bo'lsa kuryer qo'lga oladi.",
+    "timestamp": "2026-03-25T09:22:15",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001011,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "Payme qilay. Raqamni yuboring.",
+    "timestamp": "2026-03-25T09:23:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001012,
+    "telegram_chat_id": 1001,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "+998 90 123 45 67 — Payme. Alisher ismida saqlang.",
+    "timestamp": "2026-03-25T09:24:10",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001013,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "To'ladim! Screenshot yuboraymi?",
+    "timestamp": "2026-03-25T09:28:44",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001014,
+    "telegram_chat_id": 1001,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Kerak emas, ko'rib turibman. Rahmat! Ertaga soat 10-11 oralig'ida kuryer chiqadi.",
+    "timestamp": "2026-03-25T09:29:30",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001015,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "Yaxshi, kutaman. Rahmat!",
+    "timestamp": "2026-03-25T09:30:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001016,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "Salom, Samsung Galaxy S25 Ultra bormi?",
+    "timestamp": "2026-03-26T10:05:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001017,
+    "telegram_chat_id": 1001,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Salom! Ha, bor. 256GB va 512GB variantlari bor.",
+    "timestamp": "2026-03-26T10:06:20",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001018,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "256GB narxi?",
+    "timestamp": "2026-03-26T10:07:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001019,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "Va qancha vaqtda yetkazib berasiz?",
+    "timestamp": "2026-03-26T10:07:30",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1001020,
+    "telegram_chat_id": 1001,
+    "sender_id": 1001,
+    "sender_name": "Alisher Karimov",
+    "text": "AirPods Pro ham bormi?",
+    "timestamp": "2026-03-26T10:08:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  }
+]

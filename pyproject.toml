@@ -1,0 +1,23 @@
+[project]
+name = "oqim-cli"
+version = "0.1.0"
+description = "OQIM Business CLI — dev, test, deploy, debug"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+cli = [
+    "typer[all]>=0.12",
+    "rich>=13.0",
+    "httpx>=0.28",
+]
+
+[project.scripts]
+oqim = "cli.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["cli*"]
+
+[build-system]
+requires = ["setuptools>=75.0"]
+build-backend = "setuptools.build_meta"

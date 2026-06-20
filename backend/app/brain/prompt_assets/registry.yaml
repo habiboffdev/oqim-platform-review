@@ -1,0 +1,246 @@
+prompts:
+  - id: agent_runtime.hermes_reply
+    version: 1.0.0
+    path: agent_runtime/v1/hermes_reply.md
+    model_policy: composition_rich
+    output_schema: HermesToolLoopOutput
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_runtime.seller_playbook
+    version: 1.0.0
+    path: agent_runtime/v1/seller_playbook.md
+    model_policy: composition_rich
+    output_schema: HermesToolLoopOutput
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_runtime.voice.warm_seller
+    version: 1.0.0
+    path: agent_runtime/voice/v1/warm_seller.md
+    model_policy: composition_rich
+    output_schema: HermesToolLoopOutput
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_runtime.voice.friendly
+    version: 1.0.0
+    path: agent_runtime/voice/v1/friendly.md
+    model_policy: composition_rich
+    output_schema: HermesToolLoopOutput
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_runtime.voice.professional
+    version: 1.0.0
+    path: agent_runtime/voice/v1/professional.md
+    model_policy: composition_rich
+    output_schema: HermesToolLoopOutput
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_runtime.voice.gen_z
+    version: 1.0.0
+    path: agent_runtime/voice/v1/gen_z.md
+    model_policy: composition_rich
+    output_schema: HermesToolLoopOutput
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_runtime.compaction.seller
+    version: 1.0.0
+    path: agent_runtime/compaction/v1/seller.md
+    model_policy: composition_rich
+    output_schema: HermesToolLoopOutput
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_runtime.compaction.personal
+    version: 1.0.0
+    path: agent_runtime/compaction/v1/personal.md
+    model_policy: composition_rich
+    output_schema: HermesToolLoopOutput
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_runtime.faithfulness_judge
+    version: 1.0.0
+    path: agent_runtime/v1/faithfulness_judge.md
+    model_policy: structured_judge
+    output_schema: FaithfulnessVerdict
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_runtime.instagram_comment_dm
+    version: 1.0.0
+    path: agent_runtime/v1/instagram_comment_dm.md
+    model_policy: structured_fast
+    output_schema: InstagramCommentDmDecision
+    eval_suite: agent_turn_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: agent_documents.agent_md_synthesis
+    version: 1.0.0
+    path: agent_documents/v1/agent_md_synthesis.md
+    model_policy: structured_fast
+    output_schema: AgentDocumentDraft
+    eval_suite: agent_documents_v1
+    cache_policy: stable_system_prompt
+  - id: agent_documents.business_md_synthesis
+    version: 1.0.0
+    path: agent_documents/v1/business_md_synthesis.md
+    model_policy: structured_fast
+    output_schema: BusinessDocumentDraft
+    eval_suite: agent_documents_v1
+    cache_policy: stable_system_prompt
+  - id: agent_documents.custom_agent_draft
+    version: 1.0.0
+    path: agent_documents/v1/custom_agent_draft.md
+    model_policy: structured_fast
+    output_schema: CustomAgentDraftBehavior
+    eval_suite: agent_documents_v1
+    cache_policy: stable_system_prompt
+  - id: business_brain.source_learning
+    version: 1.0.0
+    path: business_brain/v1/source_learning.md
+    model_policy: structured_fast
+    output_schema: BusinessSourceLearningOutput
+    eval_suite: business_brain_source_learning_v1
+    cache_policy: stable_system_prompt
+  - id: business_brain.media_semantic_learning
+    version: 1.0.0
+    path: business_brain/v1/media_semantic_learning.md
+    model_policy: media_rich
+    output_schema: BusinessSourceLearningOutput
+    eval_suite: business_brain_source_learning_v1
+    cache_policy: stable_system_prompt
+  - id: business_brain.source_unit_contextualization
+    version: 1.0.0
+    path: business_brain/v1/source_unit_contextualization.md
+    model_policy: structured_fast
+    output_schema: SourceUnitContextualizationOutput
+    eval_suite: contextual_rag_v1
+    cache_policy: stable_system_prompt
+  - id: retrieval_core.query_rewrite
+    version: 1.0.0
+    path: retrieval_core/v1/query_rewrite.md
+    model_policy: structured_fast
+    output_schema: RetrievalQueryRewriteOutput
+    eval_suite: contextual_rag_v1
+    cache_policy: stable_system_prompt
+  - id: retrieval_core.agentic_search_plan
+    version: 1.0.0
+    path: retrieval_core/v1/agentic_search_plan.md
+    model_policy: structured_fast
+    output_schema: RetrievalAgenticSearchOutput
+    eval_suite: contextual_rag_v1
+    cache_policy: stable_system_prompt
+  - id: extraction.commerce_generic
+    version: 1.0.0
+    path: extraction/v1/commerce_generic.md
+    model_policy: structured_fast
+    output_schema: CommerceExtractionOutput
+    eval_suite: universal_extraction_v1
+    cache_policy: stable_system_prompt
+  - id: extraction.generic_kb
+    version: 1.0.0
+    path: extraction/v1/generic_kb.md
+    model_policy: structured_fast
+    output_schema: KnowledgeExtractionOutput
+    eval_suite: universal_extraction_v1
+    cache_policy: stable_system_prompt
+  - id: extraction.seller_voice
+    version: 1.0.0
+    path: extraction/v1/seller_voice.md
+    model_policy: structured_fast
+    output_schema: SellerVoiceExtractionOutput
+    eval_suite: universal_extraction_v1
+    cache_policy: stable_system_prompt
+  - id: extraction.conversation_pairs
+    version: 1.0.0
+    path: extraction/v1/conversation_pairs.md
+    model_policy: structured_fast
+    output_schema: ConversationPairsExtractionOutput
+    eval_suite: universal_extraction_v1
+    cache_policy: stable_system_prompt
+  - id: extraction.buyer_intent
+    version: 1.0.0
+    path: extraction/v1/buyer_intent.md
+    model_policy: structured_fast
+    output_schema: BuyerIntentExtractionOutput
+    eval_suite: buyer_intent_v1
+    cache_policy: stable_system_prompt
+  - id: extraction.telegram_marketplace
+    version: 1.0.0
+    path: extraction/v1/telegram_marketplace.md
+    model_policy: media_rich
+    output_schema: MarketplaceListingExtractionOutput
+    eval_suite: universal_extraction_v1
+    cache_policy: stable_system_prompt
+  - id: media.voice_transcription
+    version: 1.0.0
+    path: media/v1/voice_transcription.md
+    model_policy: structured_fast
+    output_schema: VoiceTranscriptOutput
+    eval_suite: media_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: media.image_description
+    version: 1.0.0
+    path: media/v1/image_description.md
+    model_policy: media_rich
+    output_schema: ImageSemanticDescription
+    eval_suite: media_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: learning.correction_lesson_system
+    version: 1.0.0
+    path: learning/v1/correction_lesson_system.md
+    model_policy: structured_fast
+    output_schema: CorrectionLesson
+    eval_suite: learning_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: learning.correction_lesson_user
+    version: 1.0.0
+    path: learning/v1/correction_lesson_user.md
+    model_policy: structured_fast
+    output_schema: CorrectionLesson
+    eval_suite: learning_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: learning.skill_upload_normalize
+    version: 1.0.0
+    path: learning/v1/skill_upload_normalize.md
+    model_policy: structured_fast
+    output_schema: SynthesizedSkill
+    eval_suite: learning_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: learning.skill_distill
+    version: 1.0.0
+    path: learning/v1/skill_distill.md
+    model_policy: structured_fast
+    output_schema: DistilledBatch
+    eval_suite: learning_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: learning.skill_synthesis
+    version: 1.0.0
+    path: learning/v1/skill_synthesis.md
+    model_policy: structured_fast
+    output_schema: SynthesizedSkill
+    eval_suite: learning_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: contact_classifier.single_system
+    version: 1.0.0
+    path: contact_classifier/v1/single_system.md
+    model_policy: structured_fast
+    output_schema: ContactClassification
+    eval_suite: onboarding_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: contact_classifier.single_user
+    version: 1.0.0
+    path: contact_classifier/v1/single_user.md
+    model_policy: structured_fast
+    output_schema: ContactClassification
+    eval_suite: onboarding_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: contact_classifier.batch_system
+    version: 1.0.0
+    path: contact_classifier/v1/batch_system.md
+    model_policy: structured_fast
+    output_schema: ContactClassificationBatch
+    eval_suite: onboarding_runtime_v1
+    cache_policy: stable_system_prompt
+  - id: contact_classifier.batch_user
+    version: 1.0.0
+    path: contact_classifier/v1/batch_user.md
+    model_policy: structured_fast
+    output_schema: ContactClassificationBatch
+    eval_suite: onboarding_runtime_v1
+    cache_policy: stable_system_prompt

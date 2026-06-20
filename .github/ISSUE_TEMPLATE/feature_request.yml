@@ -1,0 +1,59 @@
+name: Feature Request
+description: Suggest a new feature or improvement for OQIM Business
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the feature you'd like. Focus on the problem it solves for sellers.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the system does this affect?
+      options:
+        - Backend (API, AI brain, database)
+        - Frontend (React dashboard)
+        - Gateway (Telegram connection)
+        - AI/ML (voice profile, draft quality, tools)
+        - Infrastructure (Docker, deploy, CI)
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this solve? Why is it important?
+      placeholder: |
+        Sellers can't see which customers are waiting longest for a reply.
+        This causes lost sales when high-value customers get delayed responses.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How should this work? Include UI mockups, API shapes, or flow diagrams if helpful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other approaches did you consider? Why is this one better?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this?
+      options:
+        - P1 - High (core loop, revenue impact)
+        - P2 - Medium (quality of life, efficiency)
+        - P3 - Low (nice to have)
+    validations:
+      required: true

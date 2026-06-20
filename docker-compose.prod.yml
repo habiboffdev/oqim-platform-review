@@ -1,0 +1,107 @@
+services:
+  # ─── Infrastructure ───────────────────────────────────
+  postgres:
+    image: pgvector/pgvector:pg15
+    container_name: oqim-postgres
+    restart: unless-stopped
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: oqim_business
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env.production}
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    # No ports exposed — only accessible within Docker network
+
+  redis:
+    image: redis:7-alpine
+    container_name: oqim-redis
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    # No ports exposed — only accessible within Docker network
+
+  # ─── Application Services ────────────────────────────
+  backend:
+    build: ./backend
+    container_name: oqim-backend
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    env_file: .env.production
+    environment:
+      # Override URLs to use Docker service names (not localhost)
+      DATABASE_URL: postgresql+asyncpg://postgres:${POSTGRES_PASSWORD}@postgres:5432/oqim_business
+      REDIS_URL: redis://redis:6379/0
+      SIDECAR_API_KEY: ${SIDECAR_API_KEY}
+      SIDECAR_URL: http://gramjs:3100
+      MEDIA_DIR: /shared/media
+      APP_ENV: production
+      COOKIE_SECURE: "true"
+      # Gemini API key mode (set GEMINI_API_KEY in .env.production)
+      # To switch to Vertex AI: remove GEMINI_API_KEY, uncomment below:
+      # GOOGLE_APPLICATION_CREDENTIALS: /etc/gcp/credentials.json
+      # GOOGLE_GENAI_USE_VERTEXAI: "TRUE"
+    volumes:
+      - media_data:/shared/media
+      - media_cache:/app/media_cache
+
+  gramjs:
+    build: ./gramjs-sidecar
+    container_name: oqim-gramjs
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      PORT: 3100
+      BACKEND_CALLBACK_URL: http://backend:8001
+      SIDECAR_API_KEY: ${SIDECAR_API_KEY}
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD}@postgres:5432/oqim_business
+      SESSION_ENCRYPTION_KEY: ${SESSION_ENCRYPTION_KEY}
+
+  # ─── Reverse Proxy ───────────────────────────────────
+  nginx:
+    image: nginx:alpine
+    container_name: oqim-nginx
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./frontend/dist:/usr/share/nginx/frontend:ro
+      - ./deploy/nginx:/etc/nginx/conf.d:ro
+      - certbot_certs:/etc/letsencrypt:ro
+      - certbot_www:/var/www/certbot:ro
+
+  # ─── SSL Certificate Manager ─────────────────────────
+  certbot:
+    image: certbot/certbot
+    container_name: oqim-certbot
+    volumes:
+      - certbot_certs:/etc/letsencrypt
+      - certbot_www:/var/www/certbot
+    # Renew certs every 12 hours (certbot is smart — only renews when needed)
+    entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
+
+volumes:
+  pgdata:
+  redis_data:
+  media_data:
+  media_cache:
+  certbot_certs:
+  certbot_www:

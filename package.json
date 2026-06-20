@@ -1,0 +1,26 @@
+{
+  "name": "oqim-business",
+  "private": true,
+  "version": "0.0.0",
+  "description": "OQIM Business — Self-Learning Seller Agent monorepo",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev -w frontend",
+    "build:frontend": "npm run build -w frontend",
+    "lint:frontend": "npm run lint -w frontend",
+    "lint:backend": "cd backend && ruff check .",
+    "format:backend": "cd backend && ruff format .",
+    "typecheck:backend": "cd backend && mypy app/",
+    "typecheck:frontend": "cd frontend && tsc --noEmit",
+    "test:backend": "cd backend && python -m pytest tests/",
+    "test:frontend": "cd frontend && npx vitest run",
+    "test:sidecar": "cd gramjs-sidecar && node --test",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "typecheck": "npm run typecheck:frontend && npm run typecheck:backend",
+    "test": "npm run test:backend && npm run test:frontend && npm run test:sidecar",
+    "duplicates": "npx jscpd --config .jscpd.json .",
+    "dead-code:frontend": "npx knip --config frontend/knip.json --directory frontend"
+  }
+}

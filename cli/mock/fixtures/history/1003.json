@@ -1,0 +1,57 @@
+[
+  {
+    "telegram_message_id": 1003001,
+    "telegram_chat_id": 1003,
+    "sender_id": 1003,
+    "sender_name": "Ota",
+    "text": "Salom bolam, yaxshimisan?",
+    "timestamp": "2026-03-25T19:00:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1003002,
+    "telegram_chat_id": 1003,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Salom ota, yaxshiman, rahmat! Siz yaxshimisiz?",
+    "timestamp": "2026-03-25T19:05:00",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1003003,
+    "telegram_chat_id": 1003,
+    "sender_id": 1003,
+    "sender_name": "Ota",
+    "text": "Yaxshi, sog'lom. Kecha Toshkentga keldim. Qachon ko'rishimiz mumkin?",
+    "timestamp": "2026-03-25T19:06:30",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1003004,
+    "telegram_chat_id": 1003,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Shanba kuni keling, uyda bo'lamiz. Onam plov qiladi 😊",
+    "timestamp": "2026-03-25T19:10:00",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1003005,
+    "telegram_chat_id": 1003,
+    "sender_id": 1003,
+    "sender_name": "Ota",
+    "text": "Xo'p, shanba kuni kelaman. Xayr, bolam!",
+    "timestamp": "2026-03-25T19:12:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  }
+]

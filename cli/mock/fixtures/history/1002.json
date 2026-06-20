@@ -1,0 +1,112 @@
+[
+  {
+    "telegram_message_id": 1002001,
+    "telegram_chat_id": 1002,
+    "sender_id": 1002,
+    "sender_name": "Sardor (optom)",
+    "text": "Assalomu alaykum! Optom narxlari bormi? 20 dona iPhone 15 kerak.",
+    "timestamp": "2026-03-24T14:00:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1002002,
+    "telegram_chat_id": 1002,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Vaalaykum assalom, Sardor aka! Ha, optomga alohida narx bor. 10 donadan yuqoriga chegirma qilamiz.",
+    "timestamp": "2026-03-24T14:02:00",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1002003,
+    "telegram_chat_id": 1002,
+    "sender_id": 1002,
+    "sender_name": "Sardor (optom)",
+    "text": "20 dona bo'lsa necha foiz chegirma bo'ladi?",
+    "timestamp": "2026-03-24T14:03:30",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1002004,
+    "telegram_chat_id": 1002,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "20 dona uchun 7% chegirma. iPhone 15 128GB — birtalik narx 16,500,000, optomda 15,345,000 so'm.",
+    "timestamp": "2026-03-24T14:05:00",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1002005,
+    "telegram_chat_id": 1002,
+    "sender_id": 1002,
+    "sender_name": "Sardor (optom)",
+    "text": "Hamma ranglarda bormi? Qora, oq, ko'k kerak.",
+    "timestamp": "2026-03-24T14:07:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1002006,
+    "telegram_chat_id": 1002,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Qora — 8 dona, oq — 6 dona, ko'k — 4 dona bor hozir. Jami 18 dona. Yana 2 donani 3 kunda keltira olamiz.",
+    "timestamp": "2026-03-24T14:09:00",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1002007,
+    "telegram_chat_id": 1002,
+    "sender_id": 1002,
+    "sender_name": "Sardor (optom)",
+    "text": "3 kun bo'lmaydi, ertaga kerak. 18 donasini olaveraman.",
+    "timestamp": "2026-03-24T14:11:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1002008,
+    "telegram_chat_id": 1002,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Mayli. 18 dona * 15,345,000 = 276,210,000 so'm. 50% avans, qolgani olganingizda. Qachon kelasiz?",
+    "timestamp": "2026-03-24T14:13:00",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1002009,
+    "telegram_chat_id": 1002,
+    "sender_id": 1002,
+    "sender_name": "Sardor (optom)",
+    "text": "Ertaga soat 11da kelaman ofisga. Avansni hozir o'tkazaymi?",
+    "timestamp": "2026-03-24T14:15:00",
+    "is_outgoing": false,
+    "media_type": null,
+    "media_filename": null
+  },
+  {
+    "telegram_message_id": 1002010,
+    "telegram_chat_id": 1002,
+    "sender_id": 99001,
+    "sender_name": "Seller",
+    "text": "Ha, avansni o'tkazsangiz bron bo'ladi. 138,105,000 so'm. Hisob raqam yuboray.",
+    "timestamp": "2026-03-24T14:16:00",
+    "is_outgoing": true,
+    "media_type": null,
+    "media_filename": null
+  }
+]

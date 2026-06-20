@@ -1,0 +1,26 @@
+[Unit]
+Description=OQIM GramJS Telegram Sidecar
+After=network-online.target postgresql.service oqim-api.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=oqim
+Group=oqim
+WorkingDirectory=/opt/oqim/current/gramjs-sidecar
+EnvironmentFile=/etc/oqim/oqim.env
+EnvironmentFile=-/etc/oqim/oqim-sidecar.env
+Environment=SIDECAR_PORT=3100
+Environment=BACKEND_CALLBACK_URL=http://127.0.0.1:8001
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=3
+KillSignal=SIGINT
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ReadWritePaths=/opt/oqim/current /var/lib/oqim /var/log/oqim
+
+[Install]
+WantedBy=multi-user.target

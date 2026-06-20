@@ -1,0 +1,1 @@
+"""Approved catalog authority package."""

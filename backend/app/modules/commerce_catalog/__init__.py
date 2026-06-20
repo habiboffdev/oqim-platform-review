@@ -1,0 +1,1 @@
+"""Commerce Catalog Core package."""

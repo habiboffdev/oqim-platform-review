@@ -1,0 +1,207 @@
+schema_version: prompt_ownership.v1
+entries:
+  - prompt_prefix: agent_runtime.
+    call_site: app.modules.agent_runtime_v2.hermes.engine
+    current_owner: Hermes reply runtime prompt composition
+    target_owner: Agent Runtime and AGENT.md owner controls
+    classification: composer-boundary
+    commercial_truth_inferred:
+      - customer-visible reply wording
+      - tool-choice guidance
+      - chat pacing guidance
+      - authority-use boundary
+    replacement_memory_fields:
+      - rendered AGENT.md
+      - agent runtime prompt asset
+      - Memory MCP authority lane
+      - Memory MCP situation lane
+      - Memory MCP style lane
+    cutover_status: active_managed_prompt_asset
+    deletion_plan: keep as the canonical managed Hermes reply prompt; delete code-local reply behavior prompts and legacy single-shot reply runtime
+    may_mutate_commercial_truth: false
+    proof_refs:
+      - backend/tests/test_reply_runtime.py
+      - backend/tests/test_hermes_engine_adapter.py
+      - backend/tests/test_prompt_ownership.py
+
+  - prompt_prefix: agent_documents.
+    call_site: app.modules.brain.agent_document, app.modules.brain.business_document, app.modules.workspace_os.custom_agent_draft
+    current_owner: BUSINESS.md and AGENT.md managed document synthesis
+    target_owner: Agent Documents
+    classification: composer-boundary
+    commercial_truth_inferred:
+      - BUSINESS.md section wording
+      - AGENT.md behavior rules
+      - AGENT.md approval rules
+      - custom agent section wording
+    replacement_memory_fields:
+      - business document sections
+      - agent document sections
+      - owner-edited document sections
+      - attached Hermes skills
+    cutover_status: active_managed_prompt_asset
+    deletion_plan: keep as canonical managed document prompt family; delete code-local document synthesis prompts
+    may_mutate_commercial_truth: false
+    proof_refs:
+      - backend/tests/test_agent_document.py
+      - backend/tests/test_agent_documents.py
+      - backend/tests/test_prompt_ownership.py
+
+  - prompt_prefix: business_brain.
+    call_site: app.modules.business_brain.source_learning, app.modules.business_brain.media_learning, app.modules.business_brain.memory, and app.modules.onboarding_learning.source_ingestion
+    current_owner: Business Brain source learning and contextual source-unit retrieval
+    target_owner: Business Brain
+    classification: signal-producer
+    commercial_truth_inferred:
+      - catalog candidate
+      - knowledge candidate
+      - seller rule candidate
+      - voice candidate
+      - integration intent candidate
+      - source media evidence
+      - source-unit retrieval context
+    replacement_memory_fields:
+      - business_brain.catalog_product_candidate
+      - business_brain.catalog_media_candidate
+      - business_brain.knowledge_fact_candidate
+      - business_brain.seller_rule_candidate
+      - business_brain.voice_fact_candidate
+      - business_brain.integration_intent_candidate
+    cutover_status: active_business_brain_source_learning
+    deletion_plan: keep as canonical Business Brain source-learning prompt family; older legacy catalog and KB extraction prompts are deleted
+    may_mutate_commercial_truth: false
+    proof_refs:
+      - backend/tests/test_business_source_learning.py
+      - backend/tests/test_business_media_semantic_learning.py
+      - backend/tests/test_business_brain_phase4_memory.py
+      - backend/tests/test_onboarding_source_ingestion.py
+
+  - prompt_prefix: retrieval_core.
+    call_site: app.modules.retrieval_core.service
+    current_owner: Retrieval Core contextual RAG
+    target_owner: Retrieval Core
+    classification: signal-producer
+    commercial_truth_inferred:
+      - query rewrite candidate
+      - agentic retrieval query candidate
+      - retrieval fact type candidate
+      - retrieval modality candidate
+    replacement_memory_fields:
+      - ContextualRetrievalTrace.query_rewrites
+      - ContextualRetrievalTrace.agentic_queries
+      - ContextualRetrievalTrace.agentic_fact_types
+      - ContextualRetrievalTrace.agentic_modalities
+      - llm_gateway_traces
+    cutover_status: active_retrieval_core_contextual_rag
+    deletion_plan: keep as canonical shared retrieval prompt family; delete route-local retrieval, embedding, and media recall islands after replacement proof
+    may_mutate_commercial_truth: false
+    proof_refs:
+      - backend/tests/test_retrieval_core.py
+
+  - prompt_id: extraction.seller_voice
+    prompt_version: 1.0.0
+    call_site: app.modules.business_brain.voice_learning
+    current_owner: Business Brain voice learning
+    target_owner: Business Brain
+    classification: signal-producer
+    commercial_truth_inferred:
+      - seller voice observation candidate
+      - seller rule candidate
+    replacement_memory_fields:
+      - Business Brain voice_fact
+      - Business Brain voice_profile projection
+      - Business Brain correction_episode_fact
+    cutover_status: active_universal_extraction_runtime
+    deletion_plan: keep as canonical seller voice extraction prompt; old VoiceProfile runtime and prompt assets are deleted
+    may_mutate_commercial_truth: false
+    proof_refs:
+      - backend/tests/test_architecture_legacy_drift.py
+      - backend/tests/test_onboarding_ingestion.py
+      - docs/architecture/2026-05-12-universal-extraction-runtime-architecture.md
+
+  - prompt_prefix: extraction.
+    call_site: app.modules.extraction_runtime.llm_provider
+    current_owner: Universal Extraction Runtime
+    target_owner: Universal Extraction Runtime
+    classification: signal-producer
+    commercial_truth_inferred:
+      - typed extraction candidate
+      - catalog candidate
+      - knowledge candidate
+      - seller rule candidate
+      - voice observation candidate
+      - conversation pair candidate
+      - marketplace listing candidate
+    replacement_memory_fields:
+      - extraction_candidate
+      - extraction_result
+      - Business Brain review candidate
+      - OQIM Intelligence review candidate
+      - CommercialActionProposal
+    cutover_status: active_universal_extraction_runtime
+    deletion_plan: keep as canonical extraction prompt family; delete old route-local extraction and classifier prompts after owner consumers pass proof
+    may_mutate_commercial_truth: false
+    proof_refs:
+      - backend/tests/test_extraction_runtime_llm_provider.py
+      - docs/architecture/2026-05-12-universal-extraction-runtime-architecture.md
+
+  - prompt_prefix: media.
+    call_site: app.services.media_hydration_runtime
+    current_owner: media semantic hydration
+    target_owner: Business Brain media evidence
+    classification: signal-producer
+    commercial_truth_inferred:
+      - visible media evidence
+      - audible media evidence
+      - media semantic capsule
+    replacement_memory_fields:
+      - business_brain.media_evidence_fact
+      - business_brain.media_evidence_projection
+      - action_runtime.catalog_media_send_candidate
+    cutover_status: active_business_brain_media_evidence_owner
+    deletion_plan: keep media prompts as evidence producers only; Business Brain stores evidence and Seller Agent interprets business meaning
+    may_mutate_commercial_truth: false
+    proof_refs:
+      - backend/tests/services/test_event_spine_persist_consumer.py
+      - backend/tests/test_business_media_semantic_learning.py
+
+  - prompt_prefix: learning.
+    call_site: app.modules.brain.skill_learner, app.modules.brain.skill_upload, app.modules.agent_runtime_v2.learning
+    current_owner: correction lesson and skill learning runtime
+    target_owner: Hermes Skills and Brain Learning
+    classification: signal-producer
+    commercial_truth_inferred:
+      - correction lesson candidate
+      - reusable skill candidate
+      - owner voice preference signal
+      - recurring conversation behavior signal
+    replacement_memory_fields:
+      - correction_episode_fact
+      - learned_skill_candidate
+      - Hermes SKILL.md candidate
+      - agent style memory lane
+    cutover_status: active_learning_prompt_family
+    deletion_plan: keep as canonical learning prompt family; generated behavior must be reviewed or granted before it changes customer-visible runtime behavior
+    may_mutate_commercial_truth: false
+    proof_refs:
+      - backend/tests/test_skill_learner.py
+      - backend/tests/test_skill_upload.py
+      - backend/tests/test_prompt_ownership.py
+
+  - prompt_prefix: contact_classifier.
+    call_site: app.services.onboarding_ingestion
+    current_owner: onboarding contact classifier
+    target_owner: Business Brain
+    classification: signal-producer
+    commercial_truth_inferred:
+      - contact type
+      - lead relevance
+      - onboarding import eligibility
+    replacement_memory_fields:
+      - extraction_candidate.contact_profile
+      - business_brain.conversation_history_source
+    cutover_status: onboarding_signal_producer_pending_commercial_backfill
+    deletion_plan: route contact classification through Business Brain ingestion
+    may_mutate_commercial_truth: false
+    proof_refs:
+      - backend/tests/test_contact_classification.py

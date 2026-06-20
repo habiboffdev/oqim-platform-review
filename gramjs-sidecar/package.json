@@ -1,0 +1,16 @@
+{
+  "name": "oqim-gramjs-sidecar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "big-integer": "^1.6.52",
+    "pg": "^8.13.1",
+    "qrcode": "^1.5.4",
+    "telegram": "^2.26.22",
+    "ws": "^8.20.0"
+  }
+}

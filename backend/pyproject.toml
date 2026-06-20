@@ -1,0 +1,93 @@
+[project]
+name = "oqim-business-backend"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "scikit-learn>=1.6,<2",
+    # Packaged Hermes runtime from the OQIM fork (Phase 1 source strategy).
+    "hermes-agent @ git+https://github.com/habiboffdev/hermes-agent.git@6abdd98cef003d9875e3cf3b695d31e1cfa5abf1",
+    # Keep shared pins compatible with OQIM's host stack and the OQIM Hermes fork.
+    "openai==2.38.0",
+    "PyJWT[crypto]==2.12.1",
+    "pyyaml==6.0.3",
+    "requests==2.33.0",
+]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 120
+src = ["app", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes
+    "I",      # isort
+    "N",      # pep8-naming
+    "UP",     # pyupgrade
+    "B",      # flake8-bugbear
+    "SIM",    # flake8-simplify
+    "C901",   # mccabe complexity
+    "T20",    # flake8-print
+    "FIX",    # flake8-fixme (tech debt tracking: flags TODO/FIXME/HACK/XXX)
+    "ERA",    # eradicate (dead code in comments)
+    "RUF",    # ruff-specific rules
+]
+ignore = [
+    "E501",   # line too long (handled by formatter)
+    "B008",   # do not perform function calls in argument defaults (FastAPI Depends pattern)
+    "FIX002", # allow TODO comments (flag but don't error)
+    "RUF001", # ambiguous chars in strings — false positive for Uzbek (tutuq belgisi ‘ U+2018)
+    "RUF002", # ambiguous chars in docstrings — same Uzbek orthography reason
+    "RUF003", # ambiguous chars in comments — same Uzbek orthography reason
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 15
+
+[tool.ruff.lint.isort]
+known-first-party = ["app"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = [
+    "redis.*",
+    "pgvector.*",
+    "google.*",
+    "telethon.*",
+    "slowapi.*",
+    "bs4.*",
+    "groq.*",
+    "apscheduler.*",
+]
+ignore_missing_imports = true
+
+[tool.deptry]
+ignore_notebooks = true
+pep621_dev_dependency_groups = ["dev"]
+exclude = ["migrations/", "venv/", ".venv/"]
+
+[tool.deptry.per_rule_ignores]
+DEP002 = [
+    "groq",        # optional fallback LLM provider
+    "apscheduler", # planned for scheduled tasks
+    "uvicorn",     # ASGI server, invoked via CLI not imported
+]

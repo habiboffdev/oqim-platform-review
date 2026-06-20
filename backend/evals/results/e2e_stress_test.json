@@ -1,0 +1,878 @@
+{
+  "total": 95,
+  "success": 94,
+  "failed": 1,
+  "avg_latency_ms": 7060.202127659574,
+  "avg_confidence": 0.8582287234042554,
+  "intents": {
+    "faq": 66,
+    "negotiation": 10,
+    "greeting": 3,
+    "follow_up": 7,
+    "order": 2,
+    "complaint": 6
+  },
+  "errors": [
+    {
+      "message": "Xayr",
+      "error": "Pre-pass decided not to reply"
+    }
+  ],
+  "results": [
+    {
+      "message": "iPhone 15 bormi?",
+      "success": true,
+      "draft": "Bor aka.\nFaqat pro versiyalari qolgan, qaysi xotirada kerak?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 9019,
+      "error": ""
+    },
+    {
+      "message": "Samsung S24 Ultra qancha?",
+      "success": true,
+      "draft": "Aka, Samsung S24 Ultra hozircha yo'q bizda.\nFaqat iPhone modellarimiz bor edi.\nBoshqa model qarab beraymi?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 8911,
+      "error": ""
+    },
+    {
+      "message": "Redmi Note 13 Pro bor ekan, narxi?",
+      "success": true,
+      "draft": "Aka, Redmi Note 13 Pro hozircha yo'q bizda.\nXohlasangiz boshqa modeldan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 5577,
+      "error": ""
+    },
+    {
+      "message": "AirPods bormi sizda?",
+      "success": true,
+      "draft": "Ha bor aka.\nQaysi modeli kerak sizga?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4049,
+      "error": ""
+    },
+    {
+      "message": "Telefon chexollar bormi?",
+      "success": true,
+      "draft": "Ha, bor aka.\nQaysi modelga kerak?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 7085,
+      "error": ""
+    },
+    {
+      "message": "iPhone 15 Pro Max narxi qancha?",
+      "success": true,
+      "draft": "Aka, iPhone 15 Pro Max hozircha yo'q bizda.\nBoshqa biror modelni qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 3826,
+      "error": ""
+    },
+    {
+      "message": "Samsung A55 bormi?",
+      "success": true,
+      "draft": "Aka, Samsung A55 hozircha yo'q bizda.\nXohlasangiz boshqa modeldan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 3879,
+      "error": ""
+    },
+    {
+      "message": "Pixel 9 bor ekanmi?",
+      "success": true,
+      "draft": "Aka, Pixel 9 hozircha yo'q bizda.\nBoshqa modellardan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 6403,
+      "error": ""
+    },
+    {
+      "message": "Zaryadka kabeli bormi USB-C?",
+      "success": true,
+      "draft": "Aka, hozircha USB-C kabelimiz yo'q edi.",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 7663,
+      "error": ""
+    },
+    {
+      "message": "Ekran plyonka bormi Samsung uchun?",
+      "success": true,
+      "draft": "Ha, bor aka.\nSamsungni qaysi modeli uchun kerak?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4426,
+      "error": ""
+    },
+    {
+      "message": "MacBook Air M3 bormi?",
+      "success": true,
+      "draft": "Aka, MacBook Air M3 hozircha yo'q bizda.\nXohlasez boshqa modeldan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4365,
+      "error": ""
+    },
+    {
+      "message": "iPad bormi yangi?",
+      "success": true,
+      "draft": "Ha, bor aka.\nAynan qaysi modeli kerak sizga?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 6407,
+      "error": ""
+    },
+    {
+      "message": "Apple Watch bormi?",
+      "success": true,
+      "draft": "Ha, bor aka.\nQaysi seriyasidan qidiryapsiz?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 6979,
+      "error": ""
+    },
+    {
+      "message": "Powerbank bormi 20000 mAh?",
+      "success": true,
+      "draft": "Aka, hozircha 20000 mAlik powerbank yo'q edi.\nBoshqa variantlardan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4177,
+      "error": ""
+    },
+    {
+      "message": "Bluetooth naushnik kerak",
+      "success": true,
+      "draft": "Bor aka.\nQanaqa model qidiryapsiz yoki narxi qanchagacha bo'lsin?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4661,
+      "error": ""
+    },
+    {
+      "message": "Samsung Galaxy Buds bormi?",
+      "success": true,
+      "draft": "Ha, bor aka.\nAynan qaysi modeli kerak sizga?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 3883,
+      "error": ""
+    },
+    {
+      "message": "Adapter bormi tez zaryadlovchi?",
+      "success": true,
+      "draft": "Bor aka.\nQaysi telga qidirvosiz?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4559,
+      "error": ""
+    },
+    {
+      "message": "Honor 200 bormi?",
+      "success": true,
+      "draft": "Aka, Honor 200 hozircha yo'q bizda.\nBoshqa modeldan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4372,
+      "error": ""
+    },
+    {
+      "message": "Xiaomi 14 bormi?",
+      "success": true,
+      "draft": "Aka, Xiaomi 14 hozircha yo'q bizda.\nXohlasez boshqa modeldan ham qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4029,
+      "error": ""
+    },
+    {
+      "message": "Telefon qobig'i kerak Redmi uchun",
+      "success": true,
+      "draft": "Bor aka.\nRedmi'ni aynan qaysi modeli kerak sizga?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4258,
+      "error": ""
+    },
+    {
+      "message": "Narxi qancha?",
+      "success": true,
+      "draft": "Aka, qaysi modelni so'rayapsiz?\nHozir hamma narsa har xil narxda.\nQaysi biri qiziqtirayotganini aytsangiz, narxini ko'rib beraman.",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4182,
+      "error": ""
+    },
+    {
+      "message": "Eng arzon telefon qancha?",
+      "success": true,
+      "draft": "Hozircha eng arzon variantlarimiz tugab qolgan.\nYana kelishi bilan xabar beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4650,
+      "error": ""
+    },
+    {
+      "message": "Chegirmada bormi?",
+      "success": true,
+      "draft": "Hozircha chegirmadagi modellar yo'q, narxlar tushishi bilan kanalga tashlab boramiz.\nHozir hamma modellarimizga 1 yil kafolat bor.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 7104,
+      "error": ""
+    },
+    {
+      "message": "Yana arzonroq narxda bormi?",
+      "success": true,
+      "draft": "Hozircha eng arzon variantimiz shu bo'lib turibdi aka.\nBalki boshqa modeldan qarab beraymi?",
+      "confidence": 0.9025,
+      "intent": "negotiation",
+      "latency_ms": 7743,
+      "error": ""
+    },
+    {
+      "message": "Kredit berasizmi?",
+      "success": true,
+      "draft": "Yo'q, kreditga bermaymiz. Faqat naqdga savdo qilamiz.\nHamma iPhone telefonlarimizga 1 yil kafolat beriladi.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 8567,
+      "error": ""
+    },
+    {
+      "message": "Muddatli to'lov bormi?",
+      "success": true,
+      "draft": "Yo'q, muddatli to'lovimiz yo'q.\nLekin hamma iPhone telefonlarimizga 1 yil kafolat beramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 5555,
+      "error": ""
+    },
+    {
+      "message": "3 ta olsam chegirma berasizmi?",
+      "success": true,
+      "draft": "Ha, albatta aka. 3 ta olsangiz optom narxda qilib beramiz.\nQaysi modelidan 3 ta olmoqchisiz?",
+      "confidence": 0.9025,
+      "intent": "negotiation",
+      "latency_ms": 9430,
+      "error": ""
+    },
+    {
+      "message": "Oxirgi narx qancha bo'ladi?",
+      "success": true,
+      "draft": "Aka, hozircha narxlari shu turibdi.\nNu o'zi qaysi modelini zakaz qilmoqchisiz?",
+      "confidence": 0.874,
+      "intent": "negotiation",
+      "latency_ms": 6736,
+      "error": ""
+    },
+    {
+      "message": "Dollar kursida qancha?",
+      "success": true,
+      "draft": "Iphone 17 – 965$, 17 Pro – 1240$, 17 Pro Max bo'lsa 1485$ bo'ladi aka.\n16 Pro 1100$, 16 Pro Max esa 750$.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 6702,
+      "error": ""
+    },
+    {
+      "message": "Bo'lib to'lash imkoni bormi?",
+      "success": true,
+      "draft": "Yo'q, hozircha bo'lib to'lashga berolmaymiz.\nFaqat naqdga yoki karta orqali sotuvda bor.\nLekin hamma iPhone telefonlarimizga 1 yil kafolat beriladi. Qaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 5801,
+      "error": ""
+    },
+    {
+      "message": "Optom narx boshqami?",
+      "success": true,
+      "draft": "Ha, optomga narxlar boshqacha bo'ladi.\nQaysi modeldan nechta kerak?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 5296,
+      "error": ""
+    },
+    {
+      "message": "Ulgurji narx berganizmi?",
+      "success": true,
+      "draft": "Ha aka, sizga ulgurji narxini aytdim.\nDostavka kerakmi yoki o'zingiz olib ketasizmi?",
+      "confidence": 0.836,
+      "intent": "negotiation",
+      "latency_ms": 6296,
+      "error": ""
+    },
+    {
+      "message": "Eng qimmat telefoniz qaysi?",
+      "success": true,
+      "draft": "Aka, hozir eng qimmati bizda yo'q ekan.\nXohlasangiz boshqa modeldan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4163,
+      "error": ""
+    },
+    {
+      "message": "1 million atrofida nima bor?",
+      "success": true,
+      "draft": "Aka, hozir 1 million atrofida narsa qolmagan edi.\nYaqin orada kelishi kerak, nu aniq qachonligini bilmayman.\nYana boshqa biron narsa qarab ko'raylikmi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4193,
+      "error": ""
+    },
+    {
+      "message": "5 millionlik telefon ko'rsating",
+      "success": true,
+      "draft": "Aka, aynan 5 millionlik variantlar hozircha yo'q ekan.\nYaqinroq narxdagi boshqa modellardan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 5120,
+      "error": ""
+    },
+    {
+      "message": "Yetkazib berasizmi?",
+      "success": true,
+      "draft": "Ha, dostavka bor.\nShahar ichida va viloyatlarga ham jo'natamiz.\nQaysi manzilga kerak edi?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 15280,
+      "error": ""
+    },
+    {
+      "message": "Dostavka bepulmi?",
+      "success": true,
+      "draft": "Dostavka bor, nu pullik aka.\nQayerga yetkazib berish kerak?",
+      "confidence": 0.3,
+      "intent": "faq",
+      "latency_ms": 12973,
+      "error": ""
+    },
+    {
+      "message": "Toshkentga yetkazib berasizmi?",
+      "success": true,
+      "draft": "Ha, Toshkentga dostavka bor.\nHamma iPhone telefonlarimizga 1 yil kafolat beramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 14789,
+      "error": ""
+    },
+    {
+      "message": "Samarqandga jo'natasizmi?",
+      "success": true,
+      "draft": "Ha, Samarqandga dostavka bor.\nHamma iPhone telefonlarimizga 1 yil kafolat beramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 5624,
+      "error": ""
+    },
+    {
+      "message": "Qancha vaqtda yetadi?",
+      "success": true,
+      "draft": "Dostavka manzilingizga qarab har xil vaqt oladi.\nToshkent shahriga zakaz qilasizmi yoki viloyatgami?",
+      "confidence": 0.9,
+      "intent": "faq",
+      "latency_ms": 13959,
+      "error": ""
+    },
+    {
+      "message": "Bugun jo'nata olasizmi?",
+      "success": true,
+      "draft": "Ha, imkoniyat bor.\nQaysi modelni tanladingiz va qayerga yetkazib berish kerak?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 6369,
+      "error": ""
+    },
+    {
+      "message": "Pochta orqali jo'natasizmi?",
+      "success": true,
+      "draft": "Yo'q, pochta orqali jo'natmaymiz. Faqat dostavka xizmati bor.\nHamma iPhone telefonlarimizga 1 yil kafolat beriladi.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9,
+      "intent": "faq",
+      "latency_ms": 11371,
+      "error": ""
+    },
+    {
+      "message": "Yandex Go bilan yubora olasizmi?",
+      "success": true,
+      "draft": "Ha, Yandex bilan dostavka qilib beramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 17634,
+      "error": ""
+    },
+    {
+      "message": "O'zim olib ketsam bo'ladimi?",
+      "success": true,
+      "draft": "Ha, bo'ladi.\nDo'konimizdan o'zingiz olib ketsangiz bo'ladi.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 6249,
+      "error": ""
+    },
+    {
+      "message": "Qayerdan olsam bo'ladi?",
+      "success": true,
+      "draft": "Toshkent bo'ylab dostavka bor aka.\nViloyatlarga ham chiqaramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9,
+      "intent": "faq",
+      "latency_ms": 11684,
+      "error": ""
+    },
+    {
+      "message": "Manzilingiz qayerda?",
+      "success": true,
+      "draft": "Do'konimiz Toshkentda, Malika bozorida joylashgan.\nQaysi model qiziqtiryapti aka?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 6638,
+      "error": ""
+    },
+    {
+      "message": "Metro yaqinida ekanmisiz?",
+      "success": true,
+      "draft": "Yo'q, metroga yaqin emasmiz.\nLekin dostavka xizmatimiz bor, shahar ichida qilib beramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9,
+      "intent": "faq",
+      "latency_ms": 5781,
+      "error": ""
+    },
+    {
+      "message": "Ish vaqtingiz nechagacha?",
+      "success": true,
+      "draft": "Hozircha faqat onlayn ishlayapmiz.\nZakaz bersangiz, dostavka qilib beramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9,
+      "intent": "faq",
+      "latency_ms": 5748,
+      "error": ""
+    },
+    {
+      "message": "Dam olish kunlari ishlaysizmi?",
+      "success": true,
+      "draft": "Ha, dam olish kunlari ham ishlaymiz.\nQaysi model qiziqtiryapti? iPhone 17 Pro yoki 16 Pro Max bormi zakazga?",
+      "confidence": 0.3,
+      "intent": "faq",
+      "latency_ms": 14080,
+      "error": ""
+    },
+    {
+      "message": "Tushlik vaqtida ochiqmisiz?",
+      "success": true,
+      "draft": "Ha, tushlikda ham ochiqmiz, bemalol kelavering.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 5661,
+      "error": ""
+    },
+    {
+      "message": "Kafolati bormi?",
+      "success": true,
+      "draft": "Ha, bor.\nBarcha iPhone telefonlariga 1 yil kafolat beriladi.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 6197,
+      "error": ""
+    },
+    {
+      "message": "Original telefon ekanmi?",
+      "success": true,
+      "draft": "Ha, aka, barcha iPhone telefonlarimiz original.\nHammasiga 1 yil kafolat beramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 9918,
+      "error": ""
+    },
+    {
+      "message": "Kopiya emasmi?",
+      "success": true,
+      "draft": "Yo'q, hammasi original.\nHamma iPhone telefonlarimizga 1 yil kafolat beriladi.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 12683,
+      "error": ""
+    },
+    {
+      "message": "Garantiya necha oy?",
+      "success": true,
+      "draft": "Hamma iPhone telefonlarimizga 1 yil kafolat beramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 9182,
+      "error": ""
+    },
+    {
+      "message": "Buzilsa almashtira olasizmi?",
+      "success": true,
+      "draft": "Ha, bor. Hamma iPhone telefonlarimizga 1 yil kafolat beriladi.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 8405,
+      "error": ""
+    },
+    {
+      "message": "Refurbished emasmi?",
+      "success": true,
+      "draft": "Yo'q, hammasi yangi.\nBizda faqat yangi telefonlar sotiladi, 1 yil kafolati bilan beramiz.\nQaysi model qiziqtiryapti?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 7125,
+      "error": ""
+    },
+    {
+      "message": "Qutisi bormi?",
+      "success": true,
+      "draft": "Aka, qutisi yo'q prosta.\nXohlasez boshqa qutili modellardan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4479,
+      "error": ""
+    },
+    {
+      "message": "Hamma aksessuarlari bormi?",
+      "success": true,
+      "draft": "Aka, komplektida nimalar bo'lishi aynan qaysi modelni olishingizga bog'liq.\nHozir hamma yangi iPhone modellarida karobkasida faqat kabel chiqadi prosta.\nSizga qaysi model qiziq edi?",
+      "confidence": 0.9025,
+      "intent": "faq",
+      "latency_ms": 6880,
+      "error": ""
+    },
+    {
+      "message": "Batareya sig'imi qancha?",
+      "success": true,
+      "draft": "Aka, aynan qaysi modelni so'rayapsiz?\nHozircha menda bu bo'yicha aniq ma'lumot yo'q edi.\nModelini yozvoring, qarab beraman.",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4505,
+      "error": ""
+    },
+    {
+      "message": "Xotira necha GB?",
+      "success": true,
+      "draft": "Aka, rasmda ko'rsatganingiz hozircha bizda yo'q ekan.\nXohlasangiz boshqa modeldan ham qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 6048,
+      "error": ""
+    },
+    {
+      "message": "Rangi tanlov bormi?",
+      "success": true,
+      "draft": "Hozircha ranglar tanlovi yo'q, aka.\nQaysi modelni",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 6309,
+      "error": ""
+    },
+    {
+      "message": "Qora rangi bormi?",
+      "success": true,
+      "draft": "Aka, hozircha qora rangi yo'q edi.\nBoshqa ranglaridan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4037,
+      "error": ""
+    },
+    {
+      "message": "Ko'k rangi qoldimi?",
+      "success": true,
+      "draft": "Aka, ko'k rangi hozircha yo'q ekan.\nBoshqa ranglaridan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4149,
+      "error": ""
+    },
+    {
+      "message": "Yangi kelganmi?",
+      "success": true,
+      "draft": "Ha, yangi keldi.\nHozir skladga tushdi prosta.\nDostavka qilib beraymi aka?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 4640,
+      "error": ""
+    },
+    {
+      "message": "Bu oxirgi modeli ekanmi?",
+      "success": true,
+      "draft": "Yo'q, bu oxirgi modeli emas aka.\nHozircha faqat shu varianti bor bizda.\nXohlasez boshqa modeldan qarab beraymi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 5280,
+      "error": ""
+    },
+    {
+      "message": "Salom",
+      "success": true,
+      "draft": "Assalomu alaykum Komronbek aka.\nYaxshimisiz?\nRasmdagi narsa bo'yicha yozdingizmi?",
+      "confidence": 0.855,
+      "intent": "greeting",
+      "latency_ms": 5151,
+      "error": ""
+    },
+    {
+      "message": "Assalomu alaykum",
+      "success": true,
+      "draft": "Assalomu alaykum aka.\nYaxshimisiz?\nTepadagi tashlagan narsalarim bo'yicha savollaringiz bormi?",
+      "confidence": 0.855,
+      "intent": "greeting",
+      "latency_ms": 5297,
+      "error": ""
+    },
+    {
+      "message": "Salom, yaxshimisiz?",
+      "success": true,
+      "draft": "Assalomu alaykum Komronbek aka. Yaxshimisiz?\nNima qidiryapsiz? Bironta konkret model kerakmi?",
+      "confidence": 0.3,
+      "intent": "greeting",
+      "latency_ms": 9654,
+      "error": ""
+    },
+    {
+      "message": "Rahmat",
+      "success": true,
+      "draft": "Arzimaydi aka.\nZakaz qilsak bo'ladimi yoki yana birorta modelni qarab beraymi?",
+      "confidence": 0.9025,
+      "intent": "follow_up",
+      "latency_ms": 5914,
+      "error": ""
+    },
+    {
+      "message": "Rahmat, o'ylab ko'raman",
+      "success": true,
+      "draft": "Xo'p aka, bemalol.\nMa'qul kelsa yozarsiz, kutaman.",
+      "confidence": 0.9025,
+      "intent": "follow_up",
+      "latency_ms": 5598,
+      "error": ""
+    },
+    {
+      "message": "Keyinroq yozaman",
+      "success": true,
+      "draft": "Xo'p aka, bemalol.\nVaqtingiz bo'lganda yozarsiz, kutaman.",
+      "confidence": 0.9025,
+      "intent": "follow_up",
+      "latency_ms": 6849,
+      "error": ""
+    },
+    {
+      "message": "Xayr",
+      "success": false,
+      "draft": "",
+      "confidence": 0.0,
+      "intent": "",
+      "latency_ms": 1691,
+      "error": "Pre-pass decided not to reply"
+    },
+    {
+      "message": "OK, tushunarli",
+      "success": true,
+      "draft": "Aha bo'ldi aka.\nZakaz qilamizmi yoki boshqa variantlarni ham ko'rib chiqasizmi?",
+      "confidence": 0.9025,
+      "intent": "follow_up",
+      "latency_ms": 8519,
+      "error": ""
+    },
+    {
+      "message": "Ha, kelib olaman",
+      "success": true,
+      "draft": "Aha bo'ldi aka.\nDo'konimiz Malika bozorida joylashgan.\nQachon kelmoqchisiz?",
+      "confidence": 0.9025,
+      "intent": "order",
+      "latency_ms": 5957,
+      "error": ""
+    },
+    {
+      "message": "Yaxshi, kelishuvdik",
+      "success": true,
+      "draft": "Bo'ldi aka, kelishdik.\nDostavka uchun manzil va telefon raqamingizni yubora olasizmi?",
+      "confidence": 0.9025,
+      "intent": "negotiation",
+      "latency_ms": 7617,
+      "error": ""
+    },
+    {
+      "message": "Telefon ishlamayapti",
+      "success": true,
+      "draft": "Uzr aka, nima bo'ldi prosta o'chib qoldimi?\nQachon oluvdingiz bizdan, qancha vaqt bo'ldi?",
+      "confidence": 0.9,
+      "intent": "complaint",
+      "latency_ms": 8697,
+      "error": ""
+    },
+    {
+      "message": "Ekran sinib qoldi",
+      "success": true,
+      "draft": "Iye, yomon bo'pti-ku aka.\nYangi olganmidingiz yoki ancha bo'ldimi?\nQaysi model edi o'zi?",
+      "confidence": 0.9,
+      "intent": "complaint",
+      "latency_ms": 9503,
+      "error": ""
+    },
+    {
+      "message": "Zaryadka tez tugayapti",
+      "success": true,
+      "draft": "Uzr aka, tushunarsiz holat bo'libdi.\nSizda qaysi model edi va qachon olgandingiz?",
+      "confidence": 0.9,
+      "intent": "complaint",
+      "latency_ms": 6931,
+      "error": ""
+    },
+    {
+      "message": "Kafolat bo'yicha almashtirib bering",
+      "success": true,
+      "draft": "Uzr aka, nima muammo bo'ldi?\nProsta nima aybi borligini aytsangiz, ko'rib beramiz.\nQachon olgan edingiz?",
+      "confidence": 0.9,
+      "intent": "complaint",
+      "latency_ms": 7422,
+      "error": ""
+    },
+    {
+      "message": "Kecha olgan telefonim yoqilmayapti",
+      "success": true,
+      "draft": "Iye, g'alati-ku. Uzr aka, hozir ko'ramiz nima bo'lganini.\nKecha qaysi modelini olgan edingiz, prosta tekshirib olay?",
+      "confidence": 0.9,
+      "intent": "complaint",
+      "latency_ms": 7570,
+      "error": ""
+    },
+    {
+      "message": "10 million qilsangiz olaman",
+      "success": true,
+      "draft": "Aka, 10 millionga to'g'risi tushib berolmayman.\n15 Pro modelimizni o'zi 12.1 mln so'm turibdi.\nNarxi oxiri aka, prosta dostavka qilib berishim mumkin. Olmoqchimisiz?",
+      "confidence": 0.855,
+      "intent": "negotiation",
+      "latency_ms": 7164,
+      "error": ""
+    },
+    {
+      "message": "Boshqa do'konda arzonroq",
+      "success": true,
+      "draft": "Tushunarli aka. Narxlar bo'yicha nu prosta bizda garantiyasi bilan sifatiga javob beriladi.\nAynan qaysi model narxini solishtiryapsiz?",
+      "confidence": 0.836,
+      "intent": "negotiation",
+      "latency_ms": 6407,
+      "error": ""
+    },
+    {
+      "message": "Chegirma qilasizmi?",
+      "success": true,
+      "draft": "Nu narxlarni maksimalniy past qilib qo'yganmiz aka.\nLekin kelishsak bo'ladi. Qaysi modelini olish niyatiz bor?",
+      "confidence": 0.9,
+      "intent": "negotiation",
+      "latency_ms": 6460,
+      "error": ""
+    },
+    {
+      "message": "Eng oxirgi narx ayting",
+      "success": true,
+      "draft": "Aka, narxini hozir aniqlayman.\nSizga aynan qaysi rangi ma'qul bo'lyapti?",
+      "confidence": 0.9025,
+      "intent": "negotiation",
+      "latency_ms": 5980,
+      "error": ""
+    },
+    {
+      "message": "2 ta olsam qanchadan?",
+      "success": true,
+      "draft": "2 ta olsangiz narxini tushirib beramiz aka.\nSizga aynan qaysi modelidan kerak?",
+      "confidence": 0.55,
+      "intent": "negotiation",
+      "latency_ms": 10634,
+      "error": ""
+    },
+    {
+      "message": "Kechagi buyurtma qayerda?",
+      "success": true,
+      "draft": "Uzr aka, kecha ozgina tushunmovchilik bo'lib zakazlar kechikdi.\nHozir qayerda ekanligini aniqlashtirib beraman.\nSizga qaysi nomerga telefon qilishsin?",
+      "confidence": 0.9,
+      "intent": "complaint",
+      "latency_ms": 7300,
+      "error": ""
+    },
+    {
+      "message": "Track raqami bormi?",
+      "success": true,
+      "draft": "Ha, bor aka.\nTrack raqamingizni chiqarib berishim uchun zakaz raqamingizni aytvoring.",
+      "confidence": 0.9,
+      "intent": "faq",
+      "latency_ms": 6021,
+      "error": ""
+    },
+    {
+      "message": "Qachon yetadi?",
+      "success": true,
+      "draft": "Dostavka viloyatlarga 1-2 kun, Toshkent ichida bir kunda yetib boradi.\nManzil qayerda aka?",
+      "confidence": 0.9,
+      "intent": "faq",
+      "latency_ms": 7768,
+      "error": ""
+    },
+    {
+      "message": "Hali jo'natdingizmi?",
+      "success": true,
+      "draft": "Hali yo'q aka.\nHozir zakazlarni tayyorlayapmiz, yo'lga chiqish arafasida.\nDostavka uchun aniq manzilingizni tashavorasizmi?",
+      "confidence": 0.9025,
+      "intent": "follow_up",
+      "latency_ms": 9722,
+      "error": ""
+    },
+    {
+      "message": "Pul o'tkazdim, tekshirib ko'ring",
+      "success": true,
+      "draft": "Hozir aka, ko'raman.\nChekini tashavorasizmi? Daqiqada tekshirib zakazni rasmiylashtiramiz.",
+      "confidence": 0.9025,
+      "intent": "order",
+      "latency_ms": 7075,
+      "error": ""
+    },
+    {
+      "message": "Chek yuboring iltimos",
+      "success": true,
+      "draft": "Aha boldi aka.\nHozir zakazni bazadan ko'rib, chekni tashavoraman.\nQaysi nomerga tushuvdi to'lov?",
+      "confidence": 0.9025,
+      "intent": "follow_up",
+      "latency_ms": 6210,
+      "error": ""
+    },
+    {
+      "message": "iPhone 15 Pro 256GB qora rangda bormi, narxi va dostavka haqida ayting",
+      "success": true,
+      "draft": "Aka, iPhone 15 Pro bor, narxi 12.1 mln so'm.\nDostavka bor, shahar ichida qilib beramiz.\nZakaz qilamizmi?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 7757,
+      "error": ""
+    },
+    {
+      "message": "Salom, kecha gaplashgan edik Samsung haqida, hali bormi?",
+      "success": true,
+      "draft": "Salom aka, yaxshimisiz\nQaysi model haqida gaplashgan edik?\nAniqrog'ini aytsangiz, hozir bor-yo'qligini tekshirib beraman.",
+      "confidence": 0.9025,
+      "intent": "follow_up",
+      "latency_ms": 6465,
+      "error": ""
+    },
+    {
+      "message": "Menga telefon kerak lekin qaysi yaxshiroq bilmayman, maslahat bering",
+      "success": true,
+      "draft": "Tushundim aka.\nProsta qancha summaga qarayapsiz va ko'?",
+      "confidence": 0.855,
+      "intent": "faq",
+      "latency_ms": 7384,
+      "error": ""
+    },
+    {
+      "message": "Akam uchun sovg'a qilmoqchiman, nimani tavsiya qilasiz?",
+      "success": true,
+      "draft": "Aka, zo'r sovg'alar ko'p.\nTo'g'ri tavsiya qilishim uchun qancha atrofida sovg'a qilmoqchisiz, byudjetingiz qanaqa?",
+      "confidence": 0.8075,
+      "intent": "faq",
+      "latency_ms": 6890,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+name: Chore / Tech Debt
+description: Track a maintenance task, refactor, or tech debt item
+labels: ["chore"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for refactors, dependency upgrades, CI improvements, and tech debt.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the system?
+      options:
+        - Backend
+        - Frontend
+        - Gateway
+        - Infrastructure / CI
+        - Documentation
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done and why?
+      placeholder: |
+        The `ingestion_pipeline.py` module is 684 lines with cyclomatic complexity > 20.
+        Refactor into smaller, testable functions.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: How do we know this is done?
+      placeholder: |
+        - [ ] Module split into <200 line files
+        - [ ] All existing tests pass
+        - [ ] Coverage maintained or improved

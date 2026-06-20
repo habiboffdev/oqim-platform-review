@@ -1,0 +1,7 @@
+[
+  {"telegram_chat_id": 1001, "display_name": "Alisher Karimov", "is_group": false, "is_bot": false, "unread_count": 3},
+  {"telegram_chat_id": 1002, "display_name": "Sardor (optom)", "is_group": false, "is_bot": false, "unread_count": 1},
+  {"telegram_chat_id": 1003, "display_name": "Ota", "is_group": false, "is_bot": false, "unread_count": 0},
+  {"telegram_chat_id": 1004, "display_name": "Hamkorlar guruh", "is_group": true, "is_bot": false, "unread_count": 15},
+  {"telegram_chat_id": 1005, "display_name": "BotFather", "is_group": false, "is_bot": true, "unread_count": 0}
+]

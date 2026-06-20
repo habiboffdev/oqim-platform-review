@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg15
+    container_name: oqim-biz-postgres
+    ports:
+      - "5434:5432"
+    environment:
+      POSTGRES_DB: oqim_business
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - oqim_biz_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: oqim-biz-redis
+    ports:
+      - "6381:6379"
+    volumes:
+      - oqim_biz_redis:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  gramjs:
+    build: ./gramjs-sidecar
+    container_name: oqim-biz-gramjs
+    ports:
+      - "3100:3100"
+    environment:
+      SIDECAR_PORT: "3100"
+      TELEGRAM_API_ID: "${TELEGRAM_API_ID}"
+      TELEGRAM_API_HASH: "${TELEGRAM_API_HASH}"
+      TELEGRAM_SESSION_KEY: "${TELEGRAM_SESSION_KEY}"
+      DATABASE_URL: "postgresql://postgres:postgres@postgres:5432/oqim_business"
+      BACKEND_CALLBACK_URL: "http://host.docker.internal:8001"
+      WORKSPACE_ID: "${WORKSPACE_ID:-0}"
+      SIDECAR_API_KEY: "${SIDECAR_API_KEY:-}"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  oqim_biz_pgdata:
+  oqim_biz_redis:
