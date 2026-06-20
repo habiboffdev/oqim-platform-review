@@ -7,7 +7,7 @@ dependencies = [
     # Packaged Hermes runtime from the OQIM fork (Phase 1 source strategy).
     "hermes-agent @ git+https://github.com/habiboffdev/hermes-agent.git@6abdd98cef003d9875e3cf3b695d31e1cfa5abf1",
     # Keep shared pins compatible with OQIM's host stack and the OQIM Hermes fork.
-    "openai==2.38.0",
+    "openai==2.43.0",
     "PyJWT[crypto]==2.12.1",
     "pyyaml==6.0.3",
     "requests==2.33.0",
